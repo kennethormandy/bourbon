@@ -67,6 +67,10 @@
   @include font-face(SourceSansPro, '/fonts/Source_Sans_Pro/SourceSansPro-Italic', normal, italic);
 }
 
+.font-feature-settings {
+  @include font-feature-settings("liga", "kern" 0, "pnum" 1, "onum" true);
+}
+
 .hidpi {
   @include hidpi(1.5) {
     width: 260px;
