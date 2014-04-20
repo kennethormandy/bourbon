@@ -1,7 +1,7 @@
 {
-  "name": "bourbon",
+  "name": "old-fashioned",
   "homepage": "http://bourbon.io/",
-  "version": "4.0.0-rc.2",
+  "version": "3.2.0-beta.3",
   "main": "dist/_bourbon.scss",
   "ignore": [
     "app",
@@ -12,6 +12,25 @@
     "Gemfile",
     "Gemfile.lock",
     "Rakefile",
-    "bourbon.gemspec"
-  ]
+    "bourbon.gemspec",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests",
+    "npm-debug.log"
+  ],
+  "authors": [
+    "Kenneth Ormandy <kenneth@chloi.io> (http://kennethormandy.com/)",
+    "Michael LaCroix <info@lacroixdesign.net>",
+    "Phil LaPier <hello@lapier.me>"
+  ],
+  "description": "An old fashioned version of Bourbon, compatable with libsass.",
+  "keywords": [
+    "sass",
+    "css",
+    "mixins"
+  ],
+  "license": "MIT"
 }

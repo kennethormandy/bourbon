@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+var nodePath      = require('path');
+var program       = require('commander');
+var pkg           = require('../package.json');
+var sass          = require('node-sass');
+var bourbon       = require('../');
+
+program
+  .version(pkg.version)
+
+program.on("--help", function(){
+  console.log("Use 'old-fashioned <command> --help' to get more information.")
+})
+
+program.parse(process.argv)
