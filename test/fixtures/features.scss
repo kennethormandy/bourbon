@@ -125,6 +125,11 @@
   @include transition(opacity 1.0s ease-in 0s, width 2.0s ease-in 2s);
 }
 
+.triangle {
+  @include triangle(12px, gray, down);
+  @include triangle(12px 6px, gray lavender, up-left);
+}
+
 .user-select {
   @include user-select(none);
 }
