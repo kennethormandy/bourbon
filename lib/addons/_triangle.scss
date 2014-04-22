@@ -6,10 +6,9 @@
   $height: nth($size, length($size));
 
   $foreground-color: nth($color, 1);
+  $background-color: transparent !default;
   @if (length($color) == 2) {
     $background-color: nth($color, 2);
-  } @else {
-    $background-color: transparent;
   }
 
   @if ($direction == up) or ($direction == down) or ($direction == right) or ($direction == left) {
